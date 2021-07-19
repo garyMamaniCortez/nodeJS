@@ -16,3 +16,15 @@ let years = 19;
 console.log(years);
 years = 20;
 // let is like var
+// arrow functions
+// in ES5
+const year = [2000, 2005, 2008, 2012];
+var old = year.map(function(el){
+    return 2021 - el;
+})
+console.log(old);
+// in ES6
+let old1 = year.map((el) => {
+    return 2021-el;
+}) // if its only one line (el => 2021-el) can be applyed
+console.log(old1);
