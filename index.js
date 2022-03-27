@@ -1,7 +1,13 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 3000
 const user = require('./src/routes/users')
+const loggedmiddleware = require('./src/middlewares/logged')
+
+//middleware
+app.use(loggedmiddleware.isLogged)
+app.use(express.static(path.join(__dirname, './src/public')))
 
 //routes
 app.get('/', (req, res) => {
