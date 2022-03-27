@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/garyMamaniCortez/nodeJS#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3"
   },
   "devDependencies": {
